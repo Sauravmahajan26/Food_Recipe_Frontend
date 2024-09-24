@@ -1,0 +1,31 @@
+.input-group {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-size: xx-large;
+  margin: 20px;
+  padding: 20px;
+}
+
+.container input {
+  border-radius: 20px;
+  height: 45px;
+}
+.container button {
+  border-radius: 20px;
+  background-color: gray;
+}
+
+.suggestionbox {
+  cursor: pointer;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,140 @@
+.RecipeCarouseltitle {
+  margin: 20px;
+  margin-top: 100px;
+  font-size: 1.5rem;
+}
+
+.explore-menu-text {
+  max-width: 60%;
+  color: #808;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.dietaryCard {
+  margin-top: 30px;
+  padding: 1.3em 3em;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.selectedDietaryCard {
+  background-color: gray;
+  border: 2px solid #ff6347; /* Example: change border to tomato color */
+}
+
+.dietaryCard:hover {
+  background-color: #800e13;
+  box-shadow: 0px 15px 20px rgba(88, 129, 87, 0.4);
+  color: #606c38;
+  transform: translateY(-7px);
+}
+
+.dietaryCard:active {
+  transform: translateY(-1px);
+}
+
+hr.hr-line {
+  width: 150px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.recipe-card-wrapper {
+  position: relative; /* Container for positioning the arrows */
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.recipe-card-container {
+  display: flex;
+  flex-direction: row; /* Layout cards in a row */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  gap: 2rem; /* Adds space between cards */
+  padding: 3rem; /* Padding inside the container */
+  white-space: nowrap; /* Prevents line breaks */
+  position: relative;
+  justify-content: center;
+  margin: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem; /* Adjust size of the arrows */
+  color: #333;
+  z-index: 10; /* Ensure the arrow is above the cards */
+  cursor: pointer;
+}
+
+.back-arrow {
+  left: 15px; /* Position on the left of the first card */
+}
+
+.forward-arrow {
+  right: 15px; /* Position on the right of the last card */
+}
+
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pagination-dot:hover {
+  background-color: #888;
+}
+
+.active-dot {
+  width: 13px;
+  height: 13px;
+  background-color: #333;
+  transform: scale(1); /* Make the active dot slightly larger */
+}
+
+.recipe-card-container::-webkit-scrollbar {
+  height: 8px; /* Height of the scrollbar */
+}
+
+.recipe-card-container::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar */
+}
+
+.recipe-card-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Hide scrollbar for Firefox */
+.recipe-card-container {
+  scrollbar-width: thin; /* Custom scrollbar width for Firefox */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 480px) {
+  .recipe-card-container {
+    flex-wrap: nowrap; /* Prevent wrapping of cards */
+  }
+}

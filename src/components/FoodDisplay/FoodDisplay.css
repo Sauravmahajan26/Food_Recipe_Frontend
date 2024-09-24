@@ -1,0 +1,49 @@
+.food-display {
+  margin-top: 70px;
+}
+
+.food-display h2 {
+  font-size: max(2vw, 24px);
+  font-weight: 400;
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-top: 30px;
+  gap: 10px;
+  row-gap: 50px;
+}
+.Page_navigation-btn {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.page-link-box {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  width: 100px;
+  border-radius: 40px;
+}
+
+.page-link-box-num {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  width: 50px;
+  border-radius: 40px;
+}
+
+.active-page-link-box-num {
+  display: flex;
+  border-color: brown;
+  background-color: cadetblue;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  width: 50px;
+  border-radius: 40px;
+}
