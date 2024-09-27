@@ -25,7 +25,7 @@ function RecipeCarousel() {
     {
       /* THIS WILL GET ALL DIET NAME WHICH IS DIETARY ON NAMES */
     }
-    fetch("http://localhost:8080/diets/getDietByDietary", { signal })
+    fetch("http://foodrecipebackend-production-9ab7.up.railway.app/diets/getDietByDietary", { signal })
       .then((res) => res.json())
       .then((data) => setDiets(data))
       .catch((error) => {
