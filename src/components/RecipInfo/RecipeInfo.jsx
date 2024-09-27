@@ -24,7 +24,7 @@ function RecipeInfo() {
 
   const fetchCartData = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/cart/user127`);
+      const response = await axios.get(`http://foodrecipebackend-production-9ab7.up.railway.app/cart/user127`);
       setFetchedCartData(response.data);
 
       if (response.data && response.data.items) {
