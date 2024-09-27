@@ -18,7 +18,7 @@ const RecipeSearch = () => {
     if (keyword.length < 3) return; // Only fetch suggestions if the keyword is at least 3 characters long
     try {
       const response = await axios.get(
-        `http://localhost:8080/recipes/recipe/suggestions/${keyword}`
+        `http://foodrecipebackend-production-9ab7.up.railway.app/recipes/recipe/suggestions/${keyword}`
       );
 
       setSuggestions(response.data);
@@ -39,7 +39,7 @@ const RecipeSearch = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://localhost:8080/recipes/recipe/search/${query}`
+        `http://foodrecipebackend-production-9ab7.up.railway.app/recipes/recipe/search/${query}`
       );
       setResults(response.data);
     } catch (error) {
