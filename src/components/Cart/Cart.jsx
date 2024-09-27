@@ -14,7 +14,7 @@ function Cart() {
   // Fetch cart details from backend
   const fetchCartDetails = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/cart/user127`);
+      const response = await axios.get(`http://foodrecipebackend-production-9ab7.up.railway.app/cart/user127`);
       dispatch(setCartItems(response.data.items)); // Store fetched cart items in Redux
     } catch (error) {
       console.error("Failed to fetch cart data:", error);
