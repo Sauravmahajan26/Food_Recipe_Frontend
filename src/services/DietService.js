@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const RECIPE_API_BASE_URL = "http://foodrecipebackend-production-9ab7.up.railway.app/recipes";
+const RECIPE_API_BASE_URL = "https://foodrecipebackend-production-9ab7.up.railway.app/recipes";
 
 class DietService {
   getAllDietByDietary = async (pageNumber, pageSize) => {
